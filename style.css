@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --colorA:rgb(230, 187, 70);
+    --colorB:rgb(14, 26, 66);
+    --colorC: salmon;
+    --colorD:rgb(57, 134, 179);
+    --borderA: 0 80% 80% 0;
+    --borderB: 50% 0 0 50%;
+    --borderC: 0 100% 0 0;
+    --borderD: 100% 0 0 0;
+    --borderE: 0 0 50% 50%;
+    --borderF: 50% 50% 0 0;
+}
+body{
+    padding: 0 100px 0 100px;
+}
+header{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+header p{
+    color: var(--colorB);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+main{
+    width:100%;
+    height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px;
+}
+main .title{
+    grid-column: 1 / -1;
+    text-align: right;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 1rem;
+}
+.title h1{
+    color: var(--colorB);
+    font-size: 5.3rem;
+}
+.c1,.c5, .c7, .c8, .c15, .c16{
+    background: var(--colorA);
+}
+.c3,.c4{
+    background: var(--colorB);
+}
+.c9, .c13{
+    background: var(--colorC);
+}
+.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item13,.item14,.item15{
+ width: 100%;
+ height: 100%;
+}
+.item3{
+    border-radius: var(--borderA);
+    background: var(--colorC);
+}
+.item4{
+    border-radius: var(--borderB);
+    background: var(--colorA);
+}
+.item5,.item15{
+    border-radius: var(--borderC);
+    background:  var(--colorB);
+}
+.item6{
+    border-radius: var(--borderD);
+    background:  var(--colorA);
+}
+.item7{
+    border-radius: var(--borderA);
+    background: white;
+}
+.item8{
+    border-radius: var(--borderB);
+    background: var(--colorD);
+}
+.item9, .item10{
+    border-radius: var(--borderE);
+}
+.item9{
+    background: white;
+}
+.item10{
+    background: var(--colorD);
+}
+.item11{
+    border-radius: 0 0 100% 0;
+    background: var(--colorC);
+}
+.item13, .item14{
+    border-radius: var(--borderF);
+}
+.item13{
+    background: var(--colorD);
+}
+.item14{
+    background: var(--colorA);
+}
+
+footer{
+    width:100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    color: var(--colorB);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+footer ul{
+    width: 30%;
+}
+footer ul li{
+    display: flex;
+    justify-content: space-between;
+    color: var(--colorB);
+    font-size: 12px;
+    font-weight: bold;
+}
