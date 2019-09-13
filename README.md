@@ -8,4 +8,4 @@ Resultado de la copia
 
 Diseño original
 
-![Diseño original](img/pinimg.jpeg)
+![Diseño original](img/pinimg.jpg)
